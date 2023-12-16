@@ -299,9 +299,12 @@
 
         #contact-info {
             display:    flex;
-            justify-content: space-around;
+            justify-content: space-evenly;
             flex-wrap: wrap;
             align-content: center;
+            max-width: 70%;
+            margin: 0 auto;
+            flex: 0 0 100%;
         }
 
         .icon {
@@ -466,17 +469,17 @@
         <div id="contact-info">
             <div class="contact-item">
                 <img src="mail_icon.png" alt="Email Icon" class="icon">
-                <p>Email: contact@habitationsmo.com</p>
+                <p>Email: <a href="mailto:contact@habitationsmo.com">contact@habitationsmo.com</a></p>
             </div>
     
             <div class="contact-item">
                 <img src="phone_icon.png" alt="Phone Icon" class="icon">
-                <p>Téléphone: +1 (555) 123-4567</p>
+                <p>Téléphone: <a href="tel:+15551234567"> +1 (555) 123-4567</a></p>
             </div>
     
             <div class="contact-item">
                 <img src="location_icon.png" alt="Location Icon" class="icon">
-                <p>Adresse: 2977 Rue Mathieu, Longueuil, QC</p>
+                <p>Adresse: <span>2977 Rue Mathieu, Longueuil, QC</span></p>
             </div>
         </div>
     </section>
